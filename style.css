@@ -1,7 +1,16 @@
 body {
-  background: #B3863E;
+  background: #2A6F97;
   font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
+} 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
 }
 
 header {
@@ -12,6 +21,8 @@ header {
 header h1 {
   font-size: 2em;
   padding: 16px;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 section {
@@ -26,12 +37,13 @@ section {
   max-width: 600px;
   margin: 0 auto;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+  
 }
 
 
 
 footer {
-  padding: 8px 0;
+  padding: 16px 0;
   color: #fff;
   text-align:center;
   font-style: italic;
@@ -46,8 +58,9 @@ footer {
 }
 
 #formulario input {
+  
   padding: 16px 32px;
-  font-size: 1em;
+  font-size: 0.875em;
   border-radius: 5px;
   outline: none;
   text-align: center;;
@@ -57,21 +70,26 @@ footer {
 
 #formulario label {
   margin: 16px auto;
-  font-size: 1.5em;
+  font-size: 1.225em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2A6F97;
 }
 
 #botao {
   margin: 16px auto 0 auto;
   display: block;
-  background-color: #3568DE;
+  background-color: #468FAF;
   color: #fff;
   border: none;
   border-radius: 5px;
   text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 #botao:hover {
-  background-color: #63B6FF ;
+  background-color: #2C7DA0;
 
 }
 
@@ -94,12 +112,16 @@ footer {
   background-color: #fff;
   color: black;
   border-radius: 5px;
-  
-  
 }
 
 @media (max-width: 739px) {
+  header h1{
+    font-size: 1.5em;
   section {
     max-width: 300px;
+  }
+  #tabuada select {
+    height: 100%;
+    width: 300px;
   }
 }
